@@ -1,4 +1,4 @@
-This is a repository for Week 6 in-class lab. 
+This is a repository for Week 5 in-class lab. 
 
 Create a package (optional) and keep classes in the same folder.
 
