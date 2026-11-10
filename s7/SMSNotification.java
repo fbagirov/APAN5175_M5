@@ -7,17 +7,17 @@ public class SMSNotification extends Notification {
 
     public SMSNotification(String recipient, String carrier) {
         super(recipient);
-        // TODO
+        this.carrier = carrier;
     }
 
     @Override
     public String getChannelName() {
         // TODO
-        return "TODO";
+        return "SMS";
     }
 
     @Override
     public void send(String message) {
-        // TODO print SMS format with carrier
+        System.out.println("[SMS via " + carrier + "] " + recipient + ": " + message);
     }
 }
