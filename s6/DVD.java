@@ -5,12 +5,12 @@ public class DVD extends LibraryItem {
 
     public DVD(String title, int durationMinutes) {
         super(title);
-        // TODO
+        this.durationMinutes = durationMinutes;
     }
 
     @Override
     public int getLoanPeriodDays() {
         // TODO return 7 (example)
-        return 0;
+        return 7;
     }
 }

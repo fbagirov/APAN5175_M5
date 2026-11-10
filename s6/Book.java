@@ -6,12 +6,12 @@ public class Book extends LibraryItem {
 
     public Book(String title, String author) {
         super(title);
-        // TODO
+        this.author = author;
     }
 
     @Override
     public int getLoanPeriodDays() {
         // TODO return 21 (example)
-        return 0;
+        return 21;
     }
 }
