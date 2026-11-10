@@ -1,15 +1,13 @@
 package s1;
 
-public class Cat extends Animal {
-    private boolean indoor;
+public class Main {
+    public static void main(String[] args) {
 
-    public Cat(String name, int age, boolean indoor) {
-        super(name, age);
-        // TODO
-    }
+        Cat cat = new Cat("Mimi", 3, true);
 
-    @Override
-    public void makeSound() {
-        // TODO (print cat meow)
+        cat.makeSound();
+        cat.eat();
+
+        System.out.println(cat);
     }
 }

@@ -5,20 +5,20 @@ public class Animal {
     protected int age;
 
     public Animal(String name, int age) {
-        // TODO
+        this.name = name; // TODO
+        this.age = age; // TODO
     }
 
     public void makeSound() {
-        // TODO (default animal sound)
+        System.out.println("Some animal sound"); // TODO (default animal sound)
     }
 
     public void eat() {
-        // TODO (print something generic)
+        System.out.println(name + " is eating."); // TODO (print something generic)
     }
 
     @Override
     public String toString() {
-        // TODO
-        return "TODO";
+        return "Animal{name='" + name + "', age=" + age + "}"; // TODO
     }
 }

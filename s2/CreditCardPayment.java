@@ -5,17 +5,18 @@ public class CreditCardPayment extends Payment {
 
     public CreditCardPayment(double amount, String currency, String last4) {
         super(amount, currency);
-        // TODO
+        this.last4 = last4; // TODO
     }
 
     @Override
     public double getFee() {
-        // TODO: return 2.9% + 0.30 (example)
-        return 0;
+        return amount * 0.029 + 0.30; // TODO: return 2.9% + 0.30 (example)
     }
 
     @Override
     public void process() {
         // TODO: print CC-specific processing message + call super.process() if you want
+        System.out.println("Processing credit card ending in " + last4);
+        super.process();
     }
 }
