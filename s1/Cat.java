@@ -5,11 +5,20 @@ public class Cat extends Animal {
 
     public Cat(String name, int age, boolean indoor) {
         super(name, age);
-        // TODO
+        this.indoor = indoor;
+    }
+
+    public boolean isIndoor() {
+        return indoor;
     }
 
     @Override
     public void makeSound() {
-        // TODO (print cat meow)
+        System.out.println("Cat purrs! ("+name+" is an " + (indoor ? "indoor" : "outdoor") + " cat)");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", indoor=" + indoor;
     }
 }

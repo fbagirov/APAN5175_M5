@@ -1,24 +1,26 @@
 package s1;
 
-public class Animal {
-    protected String name;
-    protected int age;
+public class Dog extends Animal {
+    private String breed;
 
-    public Animal(String name, int age) {
-        // TODO
+    public Dog(String name, int age, String breed) {
+        super(name, age);
+        this.breed
     }
 
+    public String getBreed() {
+        return breed;
+    }
+
+    @Override 
     public void makeSound() {
-        // TODO (default animal sound)
+        System.out.println("Dog barks! ("+name+" is a "+breed+")");
     }
 
-    public void eat() {
-        // TODO (print something generic)
-    }
 
     @Override
     public String toString() {
-        // TODO
-        return "TODO";
+        // 
+        return super.toString() + ", breed=" + breed + "'";
     }
 }
