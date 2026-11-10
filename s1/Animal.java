@@ -6,6 +6,7 @@ public class Animal {
 
     public Animal(String name, int age) {
         // TODO
+        this.name = name;
     }
 
     public void makeSound() {
