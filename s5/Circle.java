@@ -1,22 +1,20 @@
 package s5;
 
-
 public class Circle extends Shape {
     private double radius;
 
     public Circle(String color, double radius) {
         super(color);
-        // TODO
+        this.radius = radius;
     }
 
     @Override
     public double area() {
-        // TODO Math.PI * r * r
-        return 0;
+        return Math.PI * radius * radius;
     }
 
     @Override
     public void draw() {
-        // TODO circle draw message
+        System.out.println("Drawing a Circle...");
     }
 }

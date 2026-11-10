@@ -1,23 +1,22 @@
 package s5;
 
-
 public class Rectangle extends Shape {
     private double width;
     private double height;
 
     public Rectangle(String color, double width, double height) {
         super(color);
-        // TODO
+        this.width = width;
+        this.height = height;
     }
 
     @Override
     public double area() {
-        // TODO width * height
-        return 0;
+        return width * height;
     }
 
     @Override
     public void draw() {
-        // TODO rectangle draw message
+        System.out.println("Drawing a Rectangle...");
     }
 }
