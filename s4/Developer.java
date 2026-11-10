@@ -1,22 +1,23 @@
 package s4;
 
-
 public class Developer extends Employee {
-    private int overtimeHours;
+    private double overtimeHours;
+    private double overtimeRate;
 
-    public Developer(String name, double baseSalary, int overtimeHours) {
+    public Developer(String name, double baseSalary,
+                     double overtimeHours, double overtimeRate) {
         super(name, baseSalary);
-        // TODO
+        this.overtimeHours = overtimeHours;
+        this.overtimeRate = overtimeRate;
     }
 
     @Override
     public double calculatePay() {
-        // TODO base + overtimeHours * rate
-        return 0;
+        return baseSalary + (overtimeHours * overtimeRate);
     }
 
     @Override
     public void work() {
-        // TODO developer-specific message
+        System.out.println(name + " is writing code.");
     }
 }
